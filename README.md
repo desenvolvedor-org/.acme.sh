@@ -49,9 +49,11 @@ obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e 
 #### NO CPAINEL EDITE O CRON:
 
 4 = delete esse comando =  
+
 39	0	*	*	*	"/home/v16wlg8p87pp/.acme.sh"/acme.sh --cron --home "/home/v16wlg8p87pp/.acme.sh" > /dev/null
 
 5 = crie esse comando  = 
+
 0	0	20	*/2	* cd /home/xxxxxxx/.acme.sh > /dev/n>&1; ./acme.sh --server letsencrypt --force --issue -d seudominio.com -d *.seudominio.com --dns dns_gd > /dev/null 2>&1; ./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi > /dev/null 2>&1; curl https://www.seudominio.com/AutoSSLnotify/notify.php > /dev/null 2>&1
 
 -------------------AGORA SEU CERTIFICADO SERA RENOVADO A CADA 2 MESES E 20 DIAS-------------------
