@@ -59,12 +59,12 @@ obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e 
 -------------------AGORA SEU CERTIFICADO SERA RENOVADO A CADA 2 MESES E 20 DIAS-------------------
 
 ## Codigos Uteis
-#### instalar ssl para unico site ou subdominio:
+#### ***instalar ssl para unico site ou subdominio:
 ./acme.sh --server letsencrypt  \
      --issue  -d  seudominio.com \
      -w /home/xxxxxxxx/public_html
      
- #### instalar o backup acme por esse repositorio:
+ #### ***instalar o backup acme por esse repositorio:
  git clone https://github.com/aldejan/AutoSSL.git
  
  cd AutoSSL
@@ -73,7 +73,7 @@ obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e 
  
  obs: coloque todos os arquivos em permissao 755
  
- #### instalar o backup acme por esse repositorio:
+ #### ***instalar o backup acme por esse repositorio:
  git clone https://github.com/aldejan/acme.sh.git
  
  cd acme.sh
