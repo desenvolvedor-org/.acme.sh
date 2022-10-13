@@ -61,10 +61,10 @@ obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e 
 ## Codigos Uteis
 #### instalar ssl para unico site ou subdominio:
 ./acme.sh --server letsencrypt  \
-     --issue  -d  livemocha.store \
-     -w /home/v16wlg8p87pp/public_html
+     --issue  -d  seudominio.com \
+     -w /home/xxxxxxxx/public_html
      
- #### instalar acme por esse repositorio:
+ #### instalar o backup acme por esse repositorio:
  git clone https://github.com/aldejan/AutoSSL.git
  
  cd AutoSSL
@@ -72,6 +72,13 @@ obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e 
  ./acme.sh --install -m seuemail@gmail.com
  
  obs: coloque todos os arquivos em permissao 755
+ 
+ #### instalar o backup acme por esse repositorio:
+ git clone https://github.com/aldejan/acme.sh.git
+ 
+ cd acme.sh
+ 
+ ./acme.sh --install -m seuemail@gmail.com
  
     
 
