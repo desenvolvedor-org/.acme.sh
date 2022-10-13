@@ -2,7 +2,9 @@
 ## Install AutoSSL em hospedagem godaddy com renovaçao a cada 3 meses
 
 Essa instalaçao é baseada na instalaçao original do acme
-para mais explicaçoes acess 
+para mais explicaçoes acess https://github.com/acmesh-official/acme.sh
+
+obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e ssh
 
 ## Instalando o primeiro SSL
 #### NO CMD WINDOWS:
@@ -51,4 +53,21 @@ para mais explicaçoes acess
 5 = crie esse comando  = 0	0	20	*/2	* cd /home/xxxxxxx/.acme.sh > /dev/n>&1; ./acme.sh --server letsencrypt --force --issue -d seudominio.com -d *.seudominio.com --dns dns_gd > /dev/null 2>&1; ./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi > /dev/null 2>&1; curl https://www.seudominio.com/AutoSSLnotify/notify.php > /dev/null 2>&1
 
 -------------------AGORA SEU CERTIFICADO SERA RENOVADO A CADA 2 MESES E 20 DIAS-------------------
+
+## Codigos Uteis
+#### instalar ssl para unico site ou subdominio:
+./acme.sh --server letsencrypt  \
+     --issue  -d  livemocha.store \
+     -w /home/v16wlg8p87pp/public_html
+     
+ #### instalar acme por esse repositorio:
+ git clone https://github.com/aldejan/AutoSSL.git
+ 
+ cd AutoSSL
+ 
+ ./acme.sh --install -m seuemail@gmail.com
+ 
+ obs: coloque todos os arquivos em permissao 755
+ 
+    
 
