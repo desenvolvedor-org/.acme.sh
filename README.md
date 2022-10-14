@@ -44,7 +44,9 @@ obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e 
 2 = git clone https://github.com/aldejan/AutoSSLnotify.git
 
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
-3 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email e o dominio.
+3 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email e o dominio sem www.
+
+4 = edite o arquivo www/AutoSSLnotify/sslChecker.ini.php, coloque seu dominio com www.
 
 #### NO CPAINEL EDITE O CRON:
 
