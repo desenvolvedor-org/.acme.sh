@@ -5,6 +5,7 @@ Essa instalaçao é baseada na instalaçao original do acme
 para mais explicaçoes acess https://github.com/acmesh-official/acme.sh
 
 obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e ssh
+use um bloco de notas para pegar os codigos e editalos antes de mandar para cmd.
 
 ## Instalando o primeiro SSL
 #### NO CMD WINDOWS:
