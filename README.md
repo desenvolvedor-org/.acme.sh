@@ -45,7 +45,7 @@ use um bloco de notas para pegar os codigos e editalos antes de mandar para cmd.
 2 = git clone https://github.com/aldejan/AutoSSLnotify.git
 
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
-3 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email e o dominio sem www.
+3 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email(ou varios emails) e o dominio sem www.
 
 4 = edite o arquivo www/AutoSSLnotify/sslChecker.ini.php, coloque seu dominio com www.
 
