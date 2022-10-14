@@ -81,6 +81,3 @@ obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e 
  cd acme.sh
  
  ./acme.sh --install -m seuemail@gmail.com
- 
-    
-
