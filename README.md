@@ -53,7 +53,7 @@ use um bloco de notas para pegar os codigos e editalos antes de mandar para cmd.
 
 4 = delete esse comando =  
 
-39	0	*	*	*	"/home/v16wlg8p87pp/.acme.sh"/acme.sh --cron --home "/home/v16wlg8p87pp/.acme.sh" > /dev/null
+39	0	*	*	*	"/home/xxxxxxxx/.acme.sh"/acme.sh --cron --home "/home/xxxxxxxx/.acme.sh" > /dev/null
 
 5 = crie esse comando  = 
 
