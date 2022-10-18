@@ -46,9 +46,9 @@ MAIL_TO="usearname@hotmail.com,username@gmail.com"
 
 #### NO CMD WINDOWS:
 
-13 = acme.sh --set-notify  --notify-hook mail
+13 = ``acme.sh --set-notify  --notify-hook mail``
 
-14 = ./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi
+14 = ``./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi``
 
 --------------------certificado instalado com sucesso -----------------------------
 
@@ -56,48 +56,27 @@ MAIL_TO="usearname@hotmail.com,username@gmail.com"
 #### NO CPAINEL EDITE O CRON:
 
 1 = verifique se existe um comando similar a esse =  
-``
-39	0	*	*	*	"/home/xxxxxxxx/.acme.sh"/acme.sh --cron --home "/home/xxxxxxxx/.acme.sh" > /dev/null
-``
-#### NO CMD LOGADO NO SSH DO SITE:
-1 = cd; cd www
 
-2 = git clone https://github.com/aldejan/AutoSSLnotify.git
+``39	0	*	*	*	"/home/xxxxxxxx/.acme.sh"/acme.sh --cron --home "/home/xxxxxxxx/.acme.sh" > /dev/null``
+
+obs: esse comando é criado automanticamente e vai renovar seu certificado a cada 2 meses.
+
+#### NO CMD LOGADO NO SSH DO SITE:
+2 = ``cd; cd www``
+
+3 = ``git clone https://github.com/aldejan/AutoSSLnotify.git``
 
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
-3 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email(ou varios emails) e o dominio sem www.
+4 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email(ou varios emails) e o dominio sem www.
 
-4 = edite o arquivo www/AutoSSLnotify/sslChecker.ini.php, coloque seu dominio com www.
+5 = edite o arquivo www/AutoSSLnotify/sslChecker.ini.php, coloque seu dominio com www.
 
 #### NO CPAINEL EDITE O CRON:
 
-
 5 = crie esse comando  = 
 
-0	0	20	*/2	* curl https://www.seudominio.com/AutoSSLnotify/notify.php >/dev/null 2>&1; cd /home/xxxxxxx/.acme.sh >/dev/null 2>&1; ./acme.sh --server letsencrypt --force --issue -d seudominio.com -d *.seudominio.com --dns dns_gd >/dev/null 2>&1; ./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi >/dev/null 2>&1
+``0	0	20	*/2	* curl https://www.seudominio.com/AutoSSLnotify/notify.php >/dev/null 2>&1``
 
 
 
--------------------AGORA SEU CERTIFICADO SERA RENOVADO A CADA 2 MESES E 20 DIAS-------------------
-
-## Codigos Uteis
-#### *** instalar ssl para unico site ou subdominio: *** 
-./acme.sh --server letsencrypt  \
-     --issue  -d  seudominio.com \
-     -w /home/xxxxxxxx/public_html
-     
- #### *** instalar o backup acme por esse repositorio: *** 
- git clone https://github.com/aldejan/AutoSSL.git
- 
- cd AutoSSL
- 
- ./acme.sh --install -m seuemail@gmail.com
- 
- obs: coloque todos os arquivos em permissao 755
- 
- #### *** instalar o backup acme por esse repositorio: *** 
- git clone https://github.com/aldejan/acme.sh.git
- 
- cd acme.sh
- 
- ./acme.sh --install -m seuemail@gmail.com
+-------------------AGORA A CADA DOIS MESE VAI SER RENOVADO O CERTIFICADO E VOCE RECEBERAR UMA MSG PARA VERIFICAR-------------------
