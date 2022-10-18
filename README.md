@@ -27,9 +27,8 @@ use um bloco de notas para pegar os codigos e editalos antes de mandar para cmd.
 8 = export GD_Secret='xxxxxtmxxxxxZwuWrxxxxx'
 
 
-9 = ./acme.sh --server letsencrypt  \
-     --issue  -d  seudominio.com -d  *.seudominio.com \
-     --dns dns_gd
+9 = ./acme.sh --server letsencrypt --issue -d seudominio.com -d *.seudominio.com --dns dns_gd
+
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
 10 = edite o arquivo /.acme.sh/deploy/cpanel_uapi.sh retire o # da linha e coloque seu nome de usuario "export DEPLOY_CPANEL_USER=username"
 
