@@ -14,25 +14,28 @@ Essa primeira forma é a nativa, mais caso nao funcionar verifique a segunda for
 
 1 = abra o cmd em modo administrador
 
-2 = ssh username@888.888.888.88
+2 = ``ssh username@888.888.888.88``
 
-3 = curl https://get.acme.sh | sh -s email=seuemail@gmail.com
+3 = ``curl https://get.acme.sh | sh -s email=seuemail@gmail.com``
 
-4 = cd .acme.sh
+4 = ``cd .acme.sh``
 
-5 = acme.sh --set-default-ca  --server letsencrypt
+5 = ``acme.sh --set-default-ca  --server letsencrypt``
 
 #### NO SITE GODADDY:
 6 = crie uma key prod em https://developer.godaddy.com/keys 
+
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
 7 = depois Copia para /.acme.sh/account.conf (GD_Key='xxxxxtpTEP3_xxxxxx9dn3Tdwv8PZxxxxx') e (GD_Secret='xxxxxtmxxxxxZwuWrxxxxx');
+
 #### NO CMD WINDOWS:
-8 = export GD_Key='xxxxxtpTEP3_xxxxxx9dn3Tdwv8PZxxxxx'
 
-9 = export GD_Secret='xxxxxtmxxxxxZwuWrxxxxx'
+8 = ``export GD_Key='xxxxxtpTEP3_xxxxxx9dn3Tdwv8PZxxxxx'``
+
+9 = ``export GD_Secret='xxxxxtmxxxxxZwuWrxxxxx'``
 
 
-10 = ./acme.sh --server letsencrypt --issue -d seudominio.com -d *.seudominio.com --dns dns_gd
+10 = ``./acme.sh --server letsencrypt --issue -d seudominio.com -d *.seudominio.com --dns dns_gd``
 
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
 11 = edite o arquivo /.acme.sh/deploy/cpanel_uapi.sh retire o # da linha e coloque seu nome de usuario "export DEPLOY_CPANEL_USER=username"
