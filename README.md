@@ -53,11 +53,9 @@ MAIL_TO="usearname@hotmail.com,username@gmail.com"
 #### NO CPAINEL EDITE O CRON:
 
 1 = verifique se existe um comando similar a esse =  
-'''
-
+``
 39	0	*	*	*	"/home/xxxxxxxx/.acme.sh"/acme.sh --cron --home "/home/xxxxxxxx/.acme.sh" > /dev/null
-
-'''
+``
 #### NO CMD LOGADO NO SSH DO SITE:
 1 = cd; cd www
 
