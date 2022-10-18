@@ -40,13 +40,13 @@ Essa primeira forma é a nativa, mais caso nao funcionar verifique a segunda for
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
 11 = edite o arquivo /.acme.sh/deploy/cpanel_uapi.sh retire o # da linha e coloque seu nome de usuario "export DEPLOY_CPANEL_USER=username"
 
-12 = edite agora o arquivo /.acme.sh/notify/mail.sh retire o # da linha e coloque seu email de envio e os emails que voce quer receber as notificaçoes quando for renovado o certificado.
+12 = edite agora o arquivo /.acme.sh/notify/mail.sh retire o # da linha e coloque seu email de envio e os emails que voce quer receber as notificaçoes quando for renovado o certificado, e altere as permissoes do arquivo para 755.
 MAIL_FROM="sistemas@seudominio.com"
 MAIL_TO="usearname@hotmail.com,username@gmail.com" 
 
 #### NO CMD WINDOWS:
 
-13 = ``acme.sh --set-notify  --notify-hook mail``
+13 = ``acme.sh --set-notify  --notify-hook mail --notify-level 2 --notify-mode 0``
 
 14 = ``./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi``
 
@@ -60,23 +60,3 @@ MAIL_TO="usearname@hotmail.com,username@gmail.com"
 ``39	0	*	*	*	"/home/xxxxxxxx/.acme.sh"/acme.sh --cron --home "/home/xxxxxxxx/.acme.sh" > /dev/null``
 
 obs: esse comando é criado automanticamente e vai renovar seu certificado a cada 2 meses.
-
-#### NO CMD LOGADO NO SSH DO SITE:
-2 = ``cd; cd www``
-
-3 = ``git clone https://github.com/aldejan/AutoSSLnotify.git``
-
-#### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
-4 = edite o arquivo www/AutoSSLnotify/notify.php, coloque seu email(ou varios emails) e o dominio sem www.
-
-5 = edite o arquivo www/AutoSSLnotify/sslChecker.ini.php, coloque seu dominio com www.
-
-#### NO CPAINEL EDITE O CRON:
-
-5 = crie esse comando  = 
-
-``0	0	20	*/2	* curl https://www.seudominio.com/AutoSSLnotify/notify.php >/dev/null 2>&1``
-
-
-
--------------------AGORA A CADA DOIS MESE VAI SER RENOVADO O CERTIFICADO E VOCE RECEBERAR UMA MSG PARA VERIFICAR-------------------
