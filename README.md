@@ -60,3 +60,14 @@ MAIL_TO="usearname@hotmail.com,username@gmail.com"
 ``39	0	*	*	*	"/home/xxxxxxxx/.acme.sh"/acme.sh --cron --home "/home/xxxxxxxx/.acme.sh" > /dev/null``
 
 obs: esse comando é criado automanticamente e vai renovar seu certificado a cada 2 meses.
+
+## Atualize manualmente o certificado.
+#### NO CMD WINDOWS:
+
+1 = abra o cmd em modo administrador
+
+2 = ``ssh username@888.888.888.88``
+
+3 = ``cd .acme.sh``
+
+4 = ``./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi``
