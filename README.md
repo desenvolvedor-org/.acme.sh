@@ -17,7 +17,7 @@ Essa primeira forma é a nativa, mais caso nao funcionar verifique a segunda for
 2 = ``ssh username@888.888.888.88``
 
 3 = ``curl https://get.acme.sh | sh -s email=seuemail@gmail.com``
-Alternativa: git clone https://github.com/Livemochas/.acme.sh.git
+Alternativa: ``git clone https://github.com/Livemochas/.acme.sh.git``
 
 4 = ``cd .acme.sh``
 
