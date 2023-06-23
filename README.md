@@ -17,16 +17,17 @@ Essa primeira forma é a nativa, mais caso nao funcionar verifique a segunda for
 2 = ``ssh username@888.888.888.88``
 
 3 = ``curl https://get.acme.sh | sh -s email=seuemail@gmail.com``
+Alternativa: git clone https://github.com/Livemochas/.acme.sh.git
 
 4 = ``cd .acme.sh``
 
-5 = ``acme.sh --set-default-ca  --server letsencrypt``
+5 = ``./acme.sh --set-default-ca  --server letsencrypt``
 
 #### NO SITE GODADDY:
 6 = crie uma key prod em https://developer.godaddy.com/keys 
 
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
-7 = depois Copia para /.acme.sh/account.conf (GD_Key='xxxxxtpTEP3_xxxxxx9dn3Tdwv8PZxxxxx') e (GD_Secret='xxxxxtmxxxxxZwuWrxxxxx');
+7 = depois Copia para /.acme.sh/account.conf (SAVED_GD_Key='xxxxxtpTEP3_xxxxxx9dn3Tdwv8PZxxxxx') e (SAVED_GD_Secret'xxxxxtmxxxxxZwuWrxxxxx');
 
 #### NO CMD WINDOWS:
 
@@ -46,7 +47,7 @@ MAIL_TO="usearname@hotmail.com,username@gmail.com"
 
 #### NO CMD WINDOWS:
 
-13 = ``acme.sh --set-notify  --notify-hook mail --notify-level 2 --notify-mode 0``
+13 = ``./acme.sh --set-notify  --notify-hook mail --notify-level 2 --notify-mode 0``
 
 14 = ``./acme.sh --deploy -d seudominio.com -d *.seudominio.com --deploy-hook cpanel_uapi``
 
