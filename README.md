@@ -27,7 +27,9 @@ Alternativa: ``git clone https://github.com/Livemochas/.acme.sh.git``
 6 = crie uma key prod em https://developer.godaddy.com/keys 
 
 #### NO GERENCIADOR DE ARQUIVOS DO CPAINEL:
-7 = depois Copia para /.acme.sh/account.conf (SAVED_GD_Key='xxxxxtpTEP3_xxxxxx9dn3Tdwv8PZxxxxx') e (SAVED_GD_Secret='xxxxxtmxxxxxZwuWrxxxxx');
+7 = depois Copia para /.acme.sh/account.conf
+``SAVED_GD_Key='xxxxxtpTEP3_xxxxxx9dn3Tdwv8PZxxxxx'``
+``SAVED_GD_Secret='xxxxxtmxxxxxZwuWrxxxxx'``
 
 #### NO CMD WINDOWS:
 
