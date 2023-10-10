@@ -7,7 +7,7 @@ para mais explicaçoes acess https://github.com/acmesh-official/acme.sh
 obs: essa instalaçao deve ser feito por alguem que tenha conhecimento de php e ssh
 use um bloco de notas para pegar os codigos e editalos antes de mandar para cmd.
 
-Essa primeira forma é a nativa, mais caso nao funcionar verifique a segunda forma em https://github.com/desenvolvedor-org/AutoSSL/wiki
+Essa primeira forma é a nativa, mais caso nao funcionar verifique a segunda forma em [https://github.com/desenvolvedor-org/AutoSSL/wiki](https://github.com/desenvolvedor-org/.acme.sh/wiki)
 
 ## Instalando o primeiro SSL
 #### NO CMD WINDOWS:
