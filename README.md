@@ -16,8 +16,8 @@ Essa primeira forma é a nativa, mais caso nao funcionar verifique a segunda for
 
 2 = ``ssh username@888.888.888.88``
 
-3 = ``curl https://get.acme.sh | sh -s email=seuemail@gmail.com``
-Alternativa: ``git clone https://github.com/desenvolvedor-org/.acme.sh.git``
+3 = ``curl https://get.acme.sh | sh -s email=seuemail@gmail.com``<br>
+Alternativa: ``git clone https://github.com/desenvolvedor-org/.acme.sh.git`` e coloque todos os arquivos e pasta com a permissao 777
 
 4 = ``cd .acme.sh``
 
